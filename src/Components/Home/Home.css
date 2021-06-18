@@ -1,0 +1,20 @@
+.headers{
+    background-color: #000000;
+}
+
+
+.header a{
+    margin-right: 30px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.header a:hover{
+
+    transform: translateX(30px)
+
+}
+@media(max-width: 768px){
+    .logo img{
+        height: 50px
+    }
+}

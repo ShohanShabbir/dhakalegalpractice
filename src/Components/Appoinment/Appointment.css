@@ -1,0 +1,115 @@
+.contact{
+
+    position: relative;
+    padding: 50px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.appoinment{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-container .contactinfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+}
+.contact-container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.contact-container .contactinfo .box .icon{
+    min-width: 60px;
+    height:60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background:#fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background:#000;
+    color: #fff;
+    bottom: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.appoinment::after{
+    content: "Appointment";
+    font-size: 130px;
+    color: rgba(255, 255, 255, 0.041);;
+    top: 3620px;
+    position: absolute;
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .contact-container .contactinfo .contactForm{
+        width: 100%;
+    }
+}

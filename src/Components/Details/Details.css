@@ -1,0 +1,15 @@
+.info-card{
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+.info-primary{
+    background-color:#383c3f ;
+}
+.info-dark{
+    background-color:#3A4256;
+}
+.info-container{
+    height: 150px;
+    padding:30px;
+    margin-bottom: 15px;
+}

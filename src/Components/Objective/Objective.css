@@ -1,0 +1,19 @@
+.objective h2{
+    font-size: 60px;
+    position: relative;
+    color: rgba(255, 254, 254, 0.37);
+    
+    
+}
+.objective p{
+    font-size: 30px;
+}
+.objective::after{
+    content:'Objectives';
+    color: rgba(255, 255, 255, 0.041);
+    font-size: 130px;
+    top: 820px;
+    bottom: 600px;
+    right: 970px;
+    position: absolute;
+}

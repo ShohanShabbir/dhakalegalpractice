@@ -1,0 +1,106 @@
+.banner{
+    background-color: #000000;
+    z-index:50;
+    margin-left: 170px;
+}
+.banner h1{
+    font-size: 70px;
+    margin-left: 45px;
+    
+}
+.banner p{
+    margin-left: 45px;
+    font-size:30px;
+    bottom: 0;
+}
+.banner::after{
+    content: "Dhaka Legal Practice";
+    color: rgba(255, 255, 255, 0.041);
+    font-size: 130px;
+    position:absolute;
+    bottom: 400px;
+    right: 400px;
+    top: 100px;
+    
+}
+
+.main-btn1{
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 254, 254, 0.37);;
+    margin: 40px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 18px;
+    transition: 0.5s;
+    letter-spacing: 5px;
+
+    
+}
+.main-btn1:hover{
+    color: #000;
+}
+.main-btn1::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 254, 254, 0.37);;
+    box-shadow: 5px -8px 0 rgba(255, 254, 254, 0.37),
+    5px 8px 0 rgba(255, 254, 254, 0.37);
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.main-btn1:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 rgba(255, 254, 254, 0.37),
+    5px 0 0 rgba(255, 254, 254, 0.37);
+    transition-delay: 0s, 0s, 0.5s, 1s;
+}
+.main-btn1::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 254, 254, 0.37);;
+    box-shadow: -5px -8px 0 rgba(255, 254, 254, 0.37),
+    -5px 8px 0 rgba(255, 254, 254, 0.37);
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.main-btn1:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 rgba(255, 254, 254, 0.37),
+    -5px 0 0 rgba(255, 254, 254, 0.37);;
+    transition-delay: 0s, 0s, 0.5s, 1s;
+}
+.main-btn1 span{
+    position: relative;
+    z-index: 100;
+}
+
+@media(max-width: 768px){
+
+    .banner h1{
+        font-size:45px;
+        top: 10px;
+    }
+    .banner{
+        margin: 0;
+    }
+    .main-btn1{
+        top: 0;
+    }
+}

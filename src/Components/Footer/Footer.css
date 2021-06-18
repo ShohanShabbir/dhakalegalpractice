@@ -1,0 +1,18 @@
+.icon{
+    filter: invert(1);
+    font-size: 24px;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+.details{
+    justify-content: space-evenly;
+}
+.footer::after{
+    content:"Dhaka Legal Practice";
+    color: rgba(255, 255, 255, 0.075);
+    font-size: 130px;
+    top: 5480px;
+    margin-left: 250px;
+    position: absolute;
+
+}
